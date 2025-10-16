@@ -63,7 +63,7 @@
         #region MyRegion
 
         public string Pozdrav() =>
-            $"Jsem {_jmeno} {Prijmeni}, a je mi {_vek}let";
+            $"Jsem {_jmeno} {_prijmeni}, a je mi {_vek}let";
 
         public string Pozdrav(string pozdrav)
         {
