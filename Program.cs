@@ -6,11 +6,14 @@
         {
 
             Clovek Jonas = new Clovek("Jonáš", "Macoun", 5);
-            Jonas.Jmeno = "Jonda"; // set
-            Jonas.Vek = 155;
-            Console.WriteLine(Jonas.Jmeno); // get
+            Clovek Honza = new Clovek("Jan", "Novák", 6);
 
-            Jonas.Pozdrav();
+            string vystup = Jonas.Pozdrav("Ahoj", Honza.Jmeno);
+            Console.WriteLine(vystup);
+            vystup = Honza.Pozdrav("Nazdárek", Jonas.Jmeno);
+            Console.WriteLine(vystup);
+
+
         }
     }
 }

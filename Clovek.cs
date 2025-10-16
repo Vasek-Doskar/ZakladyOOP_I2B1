@@ -38,7 +38,6 @@
             }
         }
 
-
         public int Vek
         {
             get
@@ -48,7 +47,6 @@
             set
             {
                 value = Math.Abs(value);
-
                 if (value > 110)
                     throw new Exception($"Tento věk není ({value}) možný!");
                 else
@@ -76,6 +74,12 @@
         {
             return $"{pozdrav} {koho}!" + Pozdrav();
         }
+
+        public string Pozdrav(string text, Clovek koho)
+        {
+            return $"{text} {koho.Jmeno} {koho.Prijmeni}!" + Pozdrav();
+        }
+
         #endregion
 
 
