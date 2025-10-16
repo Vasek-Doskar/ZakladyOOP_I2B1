@@ -7,11 +7,10 @@
 
             Clovek Jonas = new Clovek("Jonáš", "Macoun", 5);
             Clovek Honza = new Clovek("Jan", "Novák", 6);
+            Clovek Vasek = new("Vašek", "Doškář", 39);
 
-            string vystup = Jonas.Pozdrav("Ahoj", Honza.Jmeno);
-            Console.WriteLine(vystup);
-            vystup = Honza.Pozdrav("Nazdárek", Jonas.Jmeno);
-            Console.WriteLine(vystup);
+            Console.WriteLine(Jonas.Pozdrav("Ahoj", Honza));          
+            Console.WriteLine( Vasek.Pozdrav("Čusik", Jonas));
 
 
         }

@@ -75,9 +75,9 @@
             return $"{pozdrav} {koho}!" + Pozdrav();
         }
 
-        public string Pozdrav(string text, Clovek koho)
+        public string Pozdrav(string text, Clovek kdo)
         {
-            return $"{text} {koho.Jmeno} {koho.Prijmeni}!" + Pozdrav();
+            return $"{text} {kdo.Jmeno} {kdo.Prijmeni}! " + Pozdrav() +$"\n{kdo.Pozdrav("Ahoj")}";
         }
 
         #endregion
